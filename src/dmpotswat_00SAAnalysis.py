@@ -44,7 +44,6 @@ print("          Distributed Model Parameter Optimization Tool          ")
 print("                   Developed by Qingyu Feng                      ")
 print("          Research Center for Eco-Enviormental Sciences          ")
 print("                  Chinese Academy of Science                     ")
-print("                   Last Updated: 2021-04-22                      ")
 print("=================================================================")
 
 
