@@ -1,0 +1,11 @@
+# User-specific files
+# ignore
+
+mdImages
+dependencies
+temp
+04SWATTxtInOut
+05workingDir
+06outputFiles
+07calibratedTIO
+04SWATTxtInOut.zip
