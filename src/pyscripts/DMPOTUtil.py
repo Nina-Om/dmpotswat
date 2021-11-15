@@ -313,17 +313,22 @@ def initOutFileParmObjBsnlvlCal(parmBsnLvl, nCalVal):
     fnBsnPara = os.path.join(fdOutputs, "DMPOT_Para_Bsn.out")
     fnBsnParaCal = os.path.join(fdOutputs,
         "DMPOT_Para_Bsn_{}.out".format(nCalVal))
-    if os.path.isfile(fnBsnParaCal):
-        os.remove(fnBsnParaCal)
-    paraValBSNHeader = "RunNO," + ",".join(parmBsnLvl["Symbol"].to_list()) + "\n"
-    with open(fnBsnParaCal, 'w') as bsnParmFile:
-        bsnParmFile.writelines(paraValBSNHeader)
+    # Commented by Qingyu Feng 20211115
+    # This was commented because the old file was overwritten when 
+    # applyBest Parameter function is conducted.
+    # if os.path.isfile(fnBsnParaCal):
+    #     os.remove(fnBsnParaCal)
+    # paraValBSNHeader = "RunNO," + ",".join(parmBsnLvl["Symbol"].to_list()) + "\n"
+    # Commented by Qingyu Feng 20211115
+    # with open(fnBsnParaCal, 'w') as bsnParmFile:
+    #     bsnParmFile.writelines(paraValBSNHeader)
 
     fnBsnParaSel = os.path.join(fdOutputs, "DMPOT_ParaSel_Bsn.out")
-    if os.path.isfile(fnBsnParaSel):
-        os.remove(fnBsnParaSel)
-    with open(fnBsnParaSel, 'w') as bsnParmSFile:
-        bsnParmSFile.writelines(paraValBSNHeader)
+    # Commented by Qingyu Feng 20211115
+    # if os.path.isfile(fnBsnParaSel):
+    #     os.remove(fnBsnParaSel)
+    # with open(fnBsnParaSel, 'w') as bsnParmSFile:
+    #     bsnParmSFile.writelines(paraValBSNHeader)
 
 
     return fnBsnPara, fnBsnParaCal, fnBsnParaSel
